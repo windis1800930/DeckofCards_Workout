@@ -21,9 +21,6 @@
         border: 1px solid grey; 
         padding: 10px;
       }
-      .p1{
-        font-size: 15px;
-      }
       .card{
         display: flex;
         flex-direction: column;
@@ -69,7 +66,7 @@
         }
         .button1:hover{
             color:#000000;
-            background-color:#726f6f;
+            background-color:#c5c1c1;
         } 
       </style>
   </head>
@@ -77,14 +74,18 @@
     <h1>Karten-Workout</h1>
     <p>Klicken Sie auf den Button, um eine Karte zu ziehen!!</p>
     <div id="buttons"style="text-align:center;">
-        <button id="drawButton"class="button1">Karte ziehen</button>
-        <button onClick="window.location.reload();" class="button1">Neustart</button>
+      <button id="drawButton"class="button1">Karte ziehen</button>
+      <button onClick="window.location.reload();" class="button1">Neustart</button>
     </div>
     <p id = "card-info"></p>
-    <p id="timer"00:00></p>
+    <p id = "timer"00:00></p>
     <div id="cardDisplay"></div>
     <div id ="workoutName"></div>
-    <script src="script.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <script src="script.js">
+      if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
   </body>
 </html>
-
