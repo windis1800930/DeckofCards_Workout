@@ -15,16 +15,14 @@
     "icons": 
     [
         {
-          "src": "./icons/maskable_icon_x192.png",
+          "src": "./icons/icon_size1.png",
           "type": "image/png",
           "sizes": "192x192",
-          "purpose": "any maskable"
         },
         {
-          "src": "./icons/maskable_icon_x512.png",
+          "src": "./icons/icon_size2.png",
           "type": "image/png",
           "sizes": "512x512",
-          "purpose": "any maskable"
         }
 
     ]
