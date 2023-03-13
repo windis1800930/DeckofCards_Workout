@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Diese Seite beinhaltet ein karten-workout">.
+    <link rel="manifest" href="/manifest.json">
     <link rel="sw" href="./sw.js">
+    <link rel="apple-touch-icon" href="icon_size1.png">
     <title>Karten-Workout</title>
     <style>
       * {
@@ -87,8 +90,16 @@
     <div id ="workoutName"></div>
     <script src="script.js">
       if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js');
-      }
+      window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+  }
     </script>
   </body>
 </html>
