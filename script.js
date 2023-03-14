@@ -23,9 +23,7 @@ const workouts = {
     '🂿': 'Joker',
     '🃟': 'Joker'
 }
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./sw.js");
-  }
+
 // Funktion zum Mischen des Decks
 function shuffleDeck(deck) {
   for (let i = deck.length - 1; i > 0; i--) {
@@ -33,7 +31,9 @@ function shuffleDeck(deck) {
     [deck[i], deck[j]] = [deck[j], deck[i]];
   }
 }
-
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+  }
 // Mischen des Decks
 window.onload = shuffleDeck(deck);
 
