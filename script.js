@@ -17,9 +17,9 @@ const workouts = {
     '🃁': 'Squats','🃂': 'Squats','🃃': 'Squats','🃄': 'Squats','🃅': 'Squats','🃆': 'Squats',
     '🃇': 'Squats','🃈': 'Squats','🃉': 'Squats','🃊':'Squats','🃋':'Squats','🃍':'Squats',
 	'🃎': 'Squats',
-    '🃑':'Plank', '🃒':'Plank', '🃓':'Plank', '🃔':'Plank', '🃕':'Plank', '🃖':'Plank', '🃗':'Plank',
-    '🃘':'Plank', '🃙':'Plank', '🃚':'Plank', '🃛':'Plank', '🃝':'Plank',
-	'🃞': 'Plank',
+    '🃑':'Situps', '🃒':'Situps', '🃓':'Situps', '🃔':'Situps', '🃕':'Situps', '🃖':'Situps', '🃗':'Situps',
+    '🃘':'Situps', '🃙':'Situps', '🃚':'Situps', '🃛':'Situps', '🃝':'Situps',
+	'🃞': 'Situps',
     '🂿': 'Joker',
     '🃟': 'Joker'
 }
