@@ -77,19 +77,19 @@
       </style>
   </head>
   <body>
-    <script src="script.js">
+    <h1>Karten-Workout</h1>
+    <p>Klicken Sie auf den Button, um eine Karte zu ziehen!!</p>
+    <div id="buttons"style="text-align:center;">
+      <button id="drawButton"class="button1">Karte ziehen</button>
+      <button onClick="window.location.reload();" class="button1">Neustart</button>
+    </div>
+    <p id = "card-info"></p>
+    <div id="cardDisplay"></div>
+    <div id ="workoutName"></div>
+    <script src="./script.js">
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("./sw.js");
       }
     </script>
-      <h1>Karten-Workout</h1>
-      <p>Klicken Sie auf den Button, um eine Karte zu ziehen!!</p>
-      <div id="buttons"style="text-align:center;">
-        <button id="drawButton"class="button1">Karte ziehen</button>
-        <button onClick="window.location.reload();" class="button1">Neustart</button>
-      </div>
-      <p id = "card-info"></p>
-      <div id="cardDisplay"></div>
-      <div id ="workoutName"></div>
   </body>
 </html>
